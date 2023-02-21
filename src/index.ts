@@ -36,14 +36,17 @@ function calculateTax(income: number, taxYear = 2023): number {
 calculateTax(10_000);
 
 // Object
-let employee: {
+type Employee = {
     readonly id: number,
     name: string,
     retire: (date: Date) => void;
-} = { 
+}
+
+let employee: Employee  = { 
     id: 1, 
     name: 'Ulya',
     retire: (date: Date) => {
         console.log(date);
     }
  };
+
