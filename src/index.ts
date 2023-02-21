@@ -15,3 +15,14 @@ numbers.forEach(n => n.toExponential);
 
 //Tuples
 let user: [number, string] = [20, 'Ulya'];
+user.push(1);
+
+//Enums
+// const small = 1;
+// const medium = 2;
+// const large = 3;
+
+//PascalCase
+const enum Size { Small = 1, Medium, Large }
+let mySize: Size = Size.Medium;
+console.log(mySize);
