@@ -28,9 +28,10 @@ let mySize: Size = Size.Medium;
 console.log(mySize);
 
 //Function 
-function calculateTax(income: number): number {
-     if (income < 50_000)
+function calculateTax(income: number, taxYear = 2023): number {
+     if (taxYear < 2023)
         return income * 1.2;
     return income * 1.3;
-     
 }
+
+calculateTax(10_000);
