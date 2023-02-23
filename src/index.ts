@@ -64,7 +64,6 @@ kgToLbs(10);
 kgToLbs('10 kg');
 
 // Intersection Types
-
 type Draggable = {
     drag: () => void
 };
@@ -80,3 +79,8 @@ drag: () => {},
 resize: () => {}
 }
 
+// Literal Types
+type Quantity = 50 | 100;
+let quantity: Quantity = 100;
+
+type Metric = 'cm' | 'inch';
